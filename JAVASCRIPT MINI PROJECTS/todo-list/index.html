@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow // Professional Task Management Dashboard</title>
+  <meta name="description" content="A premium, interactive task tracking application with persistent storage, statistics tracking, and custom workspace styling. Build for WeIntern.">
+  
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 CDN for modern icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Background Decorative Elements -->
+  <div class="blob-bg-1"></div>
+  <div class="blob-bg-2"></div>
+
+  <div class="app-wrapper">
+    <!-- Header Area -->
+    <header class="app-header">
+      <div class="header-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-list-check"></i>
+        </div>
+        <div class="logo-text">
+          <h1>TaskFlow</h1>
+          <p class="tagline">Organize. Prioritize. Execute.</p>
+        </div>
+      </div>
+      
+      <!-- Theme Switcher -->
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+        <i class="fa-solid fa-moon moon-icon"></i>
+        <i class="fa-solid fa-sun sun-icon"></i>
+      </button>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="app-main">
+      
+      <!-- Stats Dashboard Section -->
+      <section class="stats-dashboard" aria-label="Task Statistics">
+        <div class="stat-card total">
+          <div class="stat-icon"><i class="fa-solid fa-folder-open"></i></div>
+          <div class="stat-info">
+            <span class="stat-value" id="total-count">0</span>
+            <span class="stat-label">Total Tasks</span>
+          </div>
+        </div>
+        
+        <div class="stat-card pending">
+          <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="stat-info">
+            <span class="stat-value" id="pending-count">0</span>
+            <span class="stat-label">Pending</span>
+          </div>
+        </div>
+        
+        <div class="stat-card completed">
+          <div class="stat-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <div class="stat-info">
+            <span class="stat-value" id="completed-count">0</span>
+            <span class="stat-label">Completed</span>
+          </div>
+        </div>
+
+        <!-- Task Completion Progress -->
+        <div class="progress-container">
+          <div class="progress-header">
+            <span>Completion Rate</span>
+            <span id="progress-percent">0%</span>
+          </div>
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Workspace Card -->
+      <div class="workspace-card">
+        
+        <!-- Task Creation Input Form -->
+        <section class="input-section" aria-label="Add New Task">
+          <form id="todo-form" class="todo-form" autocomplete="off" novalidate>
+            <div class="input-group">
+              <label for="todo-input" class="sr-only">New Task Description</label>
+              <i class="fa-solid fa-pen-nib input-icon"></i>
+              <input type="text" id="todo-input" class="todo-input" placeholder="Type a task and hit enter..." maxlength="100">
+              <button type="submit" class="submit-btn" id="add-btn">
+                <span>Add Task</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <!-- Client-side Validation Error Container -->
+            <div id="validation-error" class="validation-error-msg">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Task description cannot be empty or just whitespace.</span>
+            </div>
+          </form>
+        </section>
+
+        <!-- Actions Toolbar (Filters, Search, Actions) -->
+        <section class="toolbar-section" aria-label="Controls and Filters">
+          <!-- Realtime Search Box -->
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="search-input" class="search-input" placeholder="Search tasks...">
+            <button id="search-clear-btn" class="search-clear-btn" aria-label="Clear Search">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Controls Wrap (Filters & Clear Button) -->
+          <div class="controls-wrapper">
+            <!-- Filter Tabs -->
+            <div class="filter-tabs" role="tablist">
+              <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true" id="tab-all">
+                All
+              </button>
+              <button class="filter-tab" data-filter="pending" role="tab" aria-selected="false" id="tab-pending">
+                Pending
+              </button>
+              <button class="filter-tab" data-filter="completed" role="tab" aria-selected="false" id="tab-completed">
+                Completed
+              </button>
+            </div>
+
+            <!-- Clear All Action -->
+            <button id="clear-all-btn" class="btn btn-secondary danger-btn" aria-label="Clear All Tasks">
+              <i class="fa-solid fa-trash-can"></i>
+              <span>Clear All</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Dynamic Tasks List -->
+        <section class="tasks-section" aria-label="Tasks List">
+          <!-- Empty State Message -->
+          <div id="empty-state" class="empty-state">
+            <div class="empty-icon-wrap">
+              <i class="fa-solid fa-clipboard-list"></i>
+            </div>
+            <h3>Your workspace is clear</h3>
+            <p>Add your first task above to start planning your day!</p>
+          </div>
+
+          <!-- Tasks List Element -->
+          <ul id="todo-list" class="todo-list">
+            <!-- Dynamically populated from JS -->
+          </ul>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer Credit Section -->
+    <footer class="app-footer">
+      <p>&copy; 2026 TaskFlow. Built for WeIntern Frontend Internship Submission.</p>
+    </footer>
+  </div>
+
+  <!-- Custom Confirmation Modals Overlay -->
+  <div id="custom-modal" class="modal-overlay hidden" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-icon warning" id="modal-title-icon">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <h2 id="modal-title">Confirm Action</h2>
+      </div>
+      <div class="modal-body">
+        <p id="modal-message">Are you sure you want to proceed with this action?</p>
+      </div>
+      <div class="modal-footer">
+        <button id="modal-cancel-btn" class="modal-btn cancel-btn">Cancel</button>
+        <button id="modal-confirm-btn" class="modal-btn confirm-btn danger">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core JavaScript logic -->
+  <script src="script.js"></script>
+</body>
+</html>
