@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paras Yadav's Portfolio - BCA Student & Aspiring Software Engineer specializing in Python, SQL, Data Analytics, Power BI, and Database Management Systems.">
+    <meta name="keywords" content="Paras Yadav, Portfolio, BCA Student, Python Developer, Data Analyst, SQL, Power BI, Sangli, Maharashtra, India">
+    <meta name="author" content="Paras Yadav">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Paras Yadav | Aspiring Software Engineer & Data Analyst">
+    <meta property="og:description" content="Explore Paras Yadav's academic achievements, technical skills in Python & SQL, key certifications, and development projects.">
+    <meta property="og:image" content="assets/sales_analysis.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Paras Yadav | Aspiring Software Engineer & Data Analyst">
+    <meta property="twitter:description" content="Explore Paras Yadav's academic achievements, technical skills in Python & SQL, key certifications, and development projects.">
+    <meta property="twitter:image" content="assets/sales_analysis.png">
+
+    <title>Paras Yadav | Software Engineer &amp; Data Analyst Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="glow-blob blob-1" aria-hidden="true"></div>
+    <div class="glow-blob blob-2" aria-hidden="true"></div>
+    <div class="glow-blob blob-3" aria-hidden="true"></div>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>Paras Yadav<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#experience" class="nav-item">Education</a>
+                <a href="#certifications" class="nav-item">Certifications</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <!-- CSS-only mobile hamburger trigger (points to #mobile-menu target) -->
+            <a href="#mobile-menu" class="hamburger-menu" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay (Uses CSS :target to slide-in) -->
+    <div class="mobile-nav-overlay" id="mobile-menu">
+        <a href="#header" class="mobile-nav-close" aria-label="Close navigation menu">&times;</a>
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-item">Home</a>
+            <a href="#about" class="mobile-nav-item">About</a>
+            <a href="#skills" class="mobile-nav-item">Skills</a>
+            <a href="#projects" class="mobile-nav-item">Projects</a>
+            <a href="#experience" class="mobile-nav-item">Education</a>
+            <a href="#certifications" class="mobile-nav-item">Certifications</a>
+            <a href="#contact" class="mobile-nav-item">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">BCA Student | Open for Opportunities</div>
+            <h1 class="hero-title">
+                Engineering Solutions with <span class="gradient-text">Data &amp; Python</span>
+            </h1>
+            <p class="hero-subtitle">
+                Hi, I'm Paras Yadav. A Bachelor of Computer Applications (BCA) student and aspiring Software Engineer/Data Analytics enthusiast specializing in Python scripting, database engineering, and interactive dashboards.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Scroll down to About section">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="section-header">
+                <span class="subtitle-tag">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Journey Card -->
+                <div class="about-bio glass-card">
+                    <h3>My Journey</h3>
+                    <p>I am a determined computer applications student with a passion for designing reliable software solutions and digging into complex datasets. My interest lies in utilizing code to solve repetitive daily tasks and creating user-centric visualization layouts.</p>
+                    <p>I focus on building clean code logic in Python, structuring optimized database tables, and constructing detailed analytics charts. I am eager to apply my learning to real-world development initiatives.</p>
+                    
+                    <div class="bio-actions">
+                        <a href="assets/resume.pdf" class="btn btn-secondary" id="btn-download-resume" download>
+                            <span>Download Resume</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </a>
+                    </div>
+
+                    <div class="bio-stats">
+                        <div class="stat-card">
+                            <span class="stat-num">9.2 / 10</span>
+                            <span class="stat-label">CGPA (Semester IV)</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">9+ Key</span>
+                            <span class="stat-label">Certs Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Career Goals Card -->
+                <div class="about-bio glass-card">
+                    <h3>Education &amp; Career Goals</h3>
+                    
+                    <div class="education-details">
+                        <div class="edu-item">
+                            <div class="edu-icon-wrapper">
+                                <svg class="edu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                            </div>
+                            <div class="edu-info">
+                                <h4 class="edu-title">Bachelor of Computer Applications (BCA)</h4>
+                                <p class="edu-inst">V.P. Institute of Management Studies &amp; Research</p>
+                                <span class="edu-duration">2024 – 2027</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goals-wrapper">
+                        <h4>Career Goals</h4>
+                        <p class="goals-text">My primary objective is to transition my academic knowledge into robust development skills. I seek opportunities to work as a software engineer or data analyst where I can design smart automated workflows and develop insightful charts that support business actions.</p>
+                        <p class="goals-text">I am constantly learning new frameworks, exploring database management optimizations, and building analytical dashboard architectures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="section-header">
+                <span class="subtitle-tag">My Toolbox</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="skills-grid-container">
+                <!-- Skill Category 1 -->
+                <div class="skill-category-card glass-card">
+                    <div class="category-icon-wrapper coral-glow">
+                        <!-- Code SVG -->
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-coral" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-coral" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Basic Java</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-coral" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Data Structures</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-coral" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category-card glass-card">
+                    <div class="category-icon-wrapper orange-glow">
+                        <!-- Chart SVG -->
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <h3>Data Analytics &amp; Viz</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-orange" style="width: 88%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Microsoft Excel</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-orange" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Dashboard Development</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-orange" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Data Visualization</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-orange" style="width: 82%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category-card glass-card">
+                    <div class="category-icon-wrapper coral-glow">
+                        <!-- Database SVG -->
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                    </div>
+                    <h3>Database &amp; Backend</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-coral" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">SQLite</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-coral" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">DBMS Architecture</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-coral" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-category-card glass-card">
+                    <div class="category-icon-wrapper orange-glow">
+                        <!-- Book SVG -->
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <h3>Core Computer Science</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Operating Systems</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-orange" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Software Engineering</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-orange" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-info-row">
+                                <span class="skill-name">Computer Networks</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar-fill fill-orange" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="section-header">
+                <span class="subtitle-tag">My Portfolio</span>
+                <h2 class="section-title">Academic &amp; Personal Projects</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/slot_machine.png" alt="Sleek neon interface representing the Python Slot Machine terminal game mockup" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-links">
+                                <a href="https://github.com/parasyadav-sw" target="_blank" class="overlay-btn" aria-label="View source code of Slot Machine project">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Game Logic</span>
+                            <span class="tag">CLI Development</span>
+                        </div>
+                        <h3 class="project-card-title">Slot Machine Game</h3>
+                        <p class="project-desc">A Python-based Slot Machine terminal game implementing betting logic, complex random outcome generation, and multi-round balance trackers using core Python OOP concepts.</p>
+                        <div class="project-footer">
+                            <a href="https://github.com/parasyadav-sw" target="_blank" class="project-link">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/file_organizer.png" alt="Sleek interface demonstrating folders auto categorizing via file organizer" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-links">
+                                <a href="https://github.com/parasyadav-sw" target="_blank" class="overlay-btn" aria-label="View source code of Smart File Organizer project">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">File Handling</span>
+                            <span class="tag">Automation Scripting</span>
+                        </div>
+                        <h3 class="project-card-title">Smart File Organizer</h3>
+                        <p class="project-desc">An automated Python-based file management script that monitors directories to automatically filter and categorize files by extensions, reducing clutter using file handling techniques.</p>
+                        <div class="project-footer">
+                            <a href="https://github.com/parasyadav-sw" target="_blank" class="project-link">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/sales_analysis.png" alt="Excel Sales analytics layout with charts and pivot tables" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="overlay-links">
+                                <a href="https://github.com/parasyadav-sw" target="_blank" class="overlay-btn" aria-label="View source code of Excel Sales Data Analysis project">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">MS Excel</span>
+                            <span class="tag">Pivot Tables</span>
+                            <span class="tag">Sales Dashboards</span>
+                        </div>
+                        <h3 class="project-card-title">Excel Sales Data Analysis</h3>
+                        <p class="project-desc">Cleaned and analyzed real-world sales performance datasets using MS Excel. Crafted interactive dashboards featuring Pivot Tables, VLOOKUP commands, KPI charts, and slicers to extract actionable trends.</p>
+                        <div class="project-footer">
+                            <a href="https://github.com/parasyadav-sw" target="_blank" class="project-link">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience/Education Timeline Section -->
+        <section class="experience-section section-padding" id="experience">
+            <div class="section-header">
+                <span class="subtitle-tag">Milestones</span>
+                <h2 class="section-title">Education History</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Timeline item: BCA -->
+                <div class="timeline-item left-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2024 - 2027 (Ongoing)</span>
+                        <h3 class="timeline-role">Bachelor of Computer Applications (BCA)</h3>
+                        <h4 class="timeline-company">V.P. Institute of Management Studies &amp; Research</h4>
+                        <p class="timeline-text">Pursuing college education in Sangli, Maharashtra. Completed Semesters I-IV with an academic index of <strong>9.2/10 CGPA</strong>, focusing on core subjects like software processes, networks, and advanced spreadsheets.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline item: DBMS & networks -->
+                <div class="timeline-item right-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">Ongoing Academic Scope</span>
+                        <h3 class="timeline-role">Relational Databases &amp; Core Systems</h3>
+                        <h4 class="timeline-company">Academic Specialization</h4>
+                        <p class="timeline-text">Building core knowledge in operating systems structure, computer networking fundamentals, software engineering models, and designing schema structures for database management setups.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section section-padding" id="certifications">
+            <div class="section-header">
+                <span class="subtitle-tag">Verified Skills</span>
+                <h2 class="section-title">Key Certifications</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="certs-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrapper shadow-coral">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Python Essentials 1</h3>
+                        <p>Cisco &amp; Python Institute</p>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrapper shadow-orange">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Introduction to Data Science</h3>
+                        <p>Cisco Networking Academy</p>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrapper shadow-coral">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>AI for All</h3>
+                        <p>Intel Technology India</p>
+                    </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrapper shadow-orange">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Generative AI Studio</h3>
+                        <p>Google Cloud</p>
+                    </div>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrapper shadow-coral">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Power BI Workshop</h3>
+                        <p>OfficeMaster Academy</p>
+                    </div>
+                </div>
+
+                <!-- Cert 6 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrapper shadow-orange">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Power BI Micro Course</h3>
+                        <p>OfficeMaster Academy</p>
+                    </div>
+                </div>
+
+                <!-- Cert 7 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrapper shadow-coral">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>AI Agents for Beginners</h3>
+                        <p>Simplilearn</p>
+                    </div>
+                </div>
+
+                <!-- Cert 8 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrapper shadow-orange">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Introduction to MS Excel</h3>
+                        <p>Simplilearn</p>
+                    </div>
+                </div>
+
+                <!-- Cert 9 -->
+                <div class="cert-card glass-card">
+                    <div class="cert-icon-wrapper shadow-coral">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Leadership Dev Camp</h3>
+                        <p>Shivaji University &amp; Bahá'í Academy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="section-header">
+                <span class="subtitle-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <p class="contact-lead-text">Looking for a determined junior developer or data analytics enthusiast? Or have questions about my academic projects? Reach out anytime!</p>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <div class="contact-icon-wrapper">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-text-wrapper">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:parasyadav19005@gmail.com" class="contact-link">parasyadav19005@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-wrapper">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="contact-text-wrapper">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+918767438990" class="contact-link">+91 8767438990</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-wrapper">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-text-wrapper">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-val">Sangli, Maharashtra, India</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="social-links-wrapper">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/parasyadav-sw" target="_blank" class="social-icon-btn" aria-label="GitHub Profile">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/paras-yadav-sw" target="_blank" class="social-icon-btn" aria-label="LinkedIn Profile">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass-card">
+                    <!-- Standard HTML form submission without JS (using Web3Forms redirect) -->
+                    <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="95a53f12-582c-4951-b808-8ccd7aff0753">
+                        <input type="hidden" name="from_name" value="Paras Yadav Portfolio">
+                        <input type="hidden" name="subject" value="New Portfolio Contact Submission">
+                        
+                        <!-- Redirect user to Web3forms default success page on submit since no JS -->
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                        <h3>Send a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input type="email" id="form-email" name="email" class="form-input" placeholder="yourname@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" name="subject" class="form-input" placeholder="How can I help you?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" class="form-input form-textarea" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Paras Yadav. All Rights Reserved. Crafted with passion &amp; pure HTML/CSS.</p>
+            <a href="#home" class="back-to-top" aria-label="Back to Top">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
