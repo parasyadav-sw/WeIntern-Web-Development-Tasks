@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Canvas | Spatial AI Workspace for Minds</title>
+    <meta name="description" content="Aura Canvas is a spatial, AI-native workspace for notes, databases, and visual brainstorming. Organize your mind visually and collaborate in real-time.">
+    <meta name="keywords" content="AI Workspace, Spatial Canvas, Mindmap, Productivity Tool, Collaborative Notes, Visual Database, Startup">
+    <meta name="author" content="Aura Labs">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aura Canvas | Spatial AI Workspace">
+    <meta property="og:description" content="Organize your thoughts on an infinite spatial canvas, guided by inline AI capabilities.">
+    <meta property="og:image" content="/assets/aura_dashboard_mockup-DND_kBEZ.png">
+
+    <!-- Twitter Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aura Canvas | Spatial AI Workspace">
+    <meta name="twitter:description" content="Organize your thoughts on an infinite spatial canvas, guided by inline AI capabilities.">
+    <meta name="twitter:image" content="/assets/aura_dashboard_mockup-DND_kBEZ.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+  <script type="module" crossorigin src="/assets/index-D9yiRNeO.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BFxSrBhJ.css">
+</head>
+<body>
+    <!-- Radial Ambient Glows -->
+    <div class="ambient-glow glow-top" aria-hidden="true"></div>
+    <div class="ambient-glow glow-middle" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#8B5CF6" />
+                            <stop offset="100%" stop-color="#3B82F6" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="url(#logoGrad)" />
+                    <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="logo-text">Aura<span class="gradient-text">Canvas</span></span>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#showcase" class="nav-link">Showcase</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <!-- Desktop CTAs -->
+            <div class="nav-actions">
+                <a href="#pricing" class="btn btn-ghost hide-mobile">Log In</a>
+                <a href="#pricing" class="btn btn-primary" id="nav-cta">Start Free</a>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <nav class="drawer-menu">
+            <a href="#features" class="drawer-link">Features</a>
+            <a href="#showcase" class="drawer-link">Showcase</a>
+            <a href="#pricing" class="drawer-link">Pricing</a>
+            <a href="#faq" class="drawer-link">FAQ</a>
+            <hr class="drawer-divider">
+            <a href="#pricing" class="btn btn-ghost drawer-btn">Log In</a>
+            <a href="#pricing" class="btn btn-primary drawer-btn">Start Free</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-badge-wrapper">
+                    <span class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Aura 2.0: The Spatial AI Canvas is Live
+                    </span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Where thoughts shape <br><span class="gradient-text">reality.</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Aura Canvas is a spatial, AI-native workspace for notes, databases, and brainstorms. Organize your mind visually, prompt AI inline, and collaborate instantly.
+                </p>
+
+                <div class="hero-ctas">
+                    <a href="#pricing" class="btn btn-primary btn-lg" id="hero-cta-primary">
+                        <span>Get Started Free</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#showcase" class="btn btn-secondary btn-lg" id="hero-cta-secondary">
+                        <svg class="btn-play" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span>Watch Demo</span>
+                    </a>
+                </div>
+
+                <!-- Interactive Mockup Showcase -->
+                <div class="hero-mockup-container">
+                    <div class="mockup-frame">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="mockup-search">
+                                <svg class="mockup-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <span>aura.canvas/workspace/mindmap</span>
+                            </div>
+                        </div>
+                        <div class="mockup-body">
+                            <img src="/assets/aura_dashboard_mockup-DND_kBEZ.png" alt="Aura Canvas Dashboard Interface" class="mockup-img" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Logos -->
+        <section class="social-proof">
+            <div class="container">
+                <p class="proof-title">Trusted by builders at next-gen companies</p>
+                <div class="logo-marquee">
+                    <div class="logo-marquee-track">
+                        <!-- Supposed logos using styled typographic marks for startups -->
+                        <div class="logo-item"><span class="logo-accent">✦</span> Vercel</div>
+                        <div class="logo-item"><span class="logo-accent">▲</span> Linear</div>
+                        <div class="logo-item"><span class="logo-accent">●</span> Stripe</div>
+                        <div class="logo-item"><span class="logo-accent">◆</span> Supabase</div>
+                        <div class="logo-item"><span class="logo-accent">❖</span> Figma</div>
+                        <div class="logo-item"><span class="logo-accent">■</span> HashiCorp</div>
+                        <!-- Repeated for infinite scroll feeling -->
+                        <div class="logo-item"><span class="logo-accent">✦</span> Vercel</div>
+                        <div class="logo-item"><span class="logo-accent">▲</span> Linear</div>
+                        <div class="logo-item"><span class="logo-accent">●</span> Stripe</div>
+                        <div class="logo-item"><span class="logo-accent">◆</span> Supabase</div>
+                        <div class="logo-item"><span class="logo-accent">❖</span> Figma</div>
+                        <div class="logo-item"><span class="logo-accent">■</span> HashiCorp</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Tabs Showcase Section -->
+        <section class="showcase-section" id="showcase">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Interactive Demo</span>
+                    <h2 class="section-title">Designed for spatial thinking</h2>
+                    <p class="section-subtitle">Switch between views below to see how Aura organizes notes, documents, and visual layouts natively on one canvas.</p>
+                </div>
+
+                <div class="showcase-tabs">
+                    <button class="showcase-tab active" data-tab="canvas">
+                        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M12 8V16"/><path d="M8 12H16"/></svg>
+                        <span>Spatial Canvas</span>
+                    </button>
+                    <button class="showcase-tab" data-tab="ai">
+                        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7L12 12L22 7L12 2Z"/><path d="M2 17L12 22L22 17"/><path d="M2 12L12 17L22 12"/></svg>
+                        <span>AI Assistant</span>
+                    </button>
+                    <button class="showcase-tab" data-tab="collab">
+                        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span>Multiplayer Sync</span>
+                    </button>
+                </div>
+
+                <!-- Showcase Content -->
+                <div class="showcase-content">
+                    <div class="showcase-panel active" id="tab-canvas">
+                        <div class="showcase-grid">
+                            <div class="showcase-info">
+                                <h3>Infinite Canvas for Visual Layouts</h3>
+                                <p>Break out of rigid linear documents. Connect notes, drag media files, create mindmaps, and design your personal database structures in a free-flowing spatial canvas.</p>
+                                <ul class="showcase-list">
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Unlimited canvas sizing with smooth vector zooming.</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Bidirectional linking between visual shapes and text documents.</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Support for videos, PDFs, widgets, and dynamic code blocks.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="showcase-graphic">
+                                <div class="graphic-canvas-demo">
+                                    <div class="canvas-node node-1">
+                                        <div class="node-header"><span class="node-dot"></span> User Journey Map</div>
+                                        <div class="node-content">Analyze user drop-off during onboarding flow.</div>
+                                    </div>
+                                    <div class="canvas-connector"></div>
+                                    <div class="canvas-node node-2">
+                                        <div class="node-header"><span class="node-dot"></span> Core Solution</div>
+                                        <div class="node-content">Integrate dynamic HSL-based cards.</div>
+                                    </div>
+                                    <div class="canvas-connector-2"></div>
+                                    <div class="canvas-node node-3">
+                                        <div class="node-header"><span class="node-dot"></span> Launch Plan</div>
+                                        <div class="node-content">Publish landing page by Wednesday!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-panel" id="tab-ai">
+                        <div class="showcase-grid">
+                            <div class="showcase-info">
+                                <h3>Inline AI: Command your workspace</h3>
+                                <p>With Aura AI Copilot, your notes write themselves. Highlight any node to synthesize data, query your entire canvas, auto-generate action lists, or translate concepts instantly.</p>
+                                <ul class="showcase-list">
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Context-aware prompts that search across your visual nodes.</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Automatic document summarization and markdown tables creation.</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Integrated code assistant that writes and runs JS/Python snippets.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="showcase-graphic">
+                                <div class="graphic-ai-demo">
+                                    <div class="ai-editor-box">
+                                        <div class="editor-text"># Product Requirements Document</div>
+                                        <div class="editor-text prompt-active">/ai generate user persona for a designer</div>
+                                        <div class="editor-ai-response">
+                                            <div class="ai-header"><span class="sparkle-icon">✦</span> Aura AI</div>
+                                            <p class="typing-text"><strong>Persona: Creative Chloe (28)</strong><br>• Goal: Wants visual, non-linear organization.<br>• Pain points: Messy notes across Slack, Notion, and FigJam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-panel" id="tab-collab">
+                        <div class="showcase-grid">
+                            <div class="showcase-info">
+                                <h3>Real-time Multiplayer Collaboration</h3>
+                                <p>Work together as if you're in the same room. Aura's state engine replicates cursor coordinates, page updates, and comments at sub-100ms latency globally.</p>
+                                <ul class="showcase-list">
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Live multiplayer cursor tracking with distinct usernames and colors.</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Inline floating comments with markdown, attachments, and emojis.</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                        <span>Robust conflict-free replicated data types (CRDTs) to prevent sync overlaps.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="showcase-graphic">
+                                <div class="graphic-collab-demo">
+                                    <div class="collab-board">
+                                        <div class="collab-card">Brainstorming Board</div>
+                                        <!-- Multiplayer cursors -->
+                                        <div class="mock-cursor cursor-violet" style="top: 25%; left: 40%;">
+                                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3V17.5L9.2 13H15.5L4.5 3Z"/></svg>
+                                            <span class="cursor-label">Chloe</span>
+                                        </div>
+                                        <div class="mock-cursor cursor-blue" style="top: 65%; left: 20%;">
+                                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 3V17.5L9.2 13H15.5L4.5 3Z"/></svg>
+                                            <span class="cursor-label">Alex</span>
+                                        </div>
+                                        <div class="mock-comment" style="top: 40%; left: 50%;">
+                                            <div class="comment-author">Alex</div>
+                                            <div class="comment-text">Should we use a gradient here?</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Features</span>
+                    <h2 class="section-title">Everything you need to create</h2>
+                    <p class="section-subtitle">Aura combines the power of structured documents, visual notes, and AI intelligence in one fast desktop and mobile web app.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </div>
+                        <h3 class="feature-card-title">Spatial Brainstorming</h3>
+                        <p class="feature-card-text">Connect notes in 2D space. Map relations visually with cards, shapes, custom colors, and arrows to easily track projects.</p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        </div>
+                        <h3 class="feature-card-title">Contextual AI Copilot</h3>
+                        <p class="feature-card-text">Our embedded AI understands your canvas layout. Highlight nodes to run queries, summarize text, or draft documentation instantly.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3 class="feature-card-title">Multiplayer Presence</h3>
+                        <p class="feature-card-text">Work side-by-side with your team members in real-time. Share cursor coordinates, chat in-canvas, and edit together.</p>
+                    </div>
+
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                        <h3 class="feature-card-title">Instant Command Menu</h3>
+                        <p class="feature-card-text">Trigger commands instantly. Press `Cmd + K` or `Ctrl + K` to search files, run AI prompts, or switch layout tools without typing menus.</p>
+                    </div>
+
+                    <!-- Feature Card 5 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                        </div>
+                        <h3 class="feature-card-title">Relational Databases</h3>
+                        <p class="feature-card-text">Structure your work your way. Create tables, boards, timelines, calendars, and checklists inside your visual notes workspace.</p>
+                    </div>
+
+                    <!-- Feature Card 6 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        </div>
+                        <h3 class="feature-card-title">Bi-Directional Sync</h3>
+                        <p class="feature-card-text">Integrate with Slack, Notion, GitHub, and Figma. Watch your external databases update in real-time as you drag and edit notes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Pricing Plans</span>
+                    <h2 class="section-title">Scale canvas for your needs</h2>
+                    <p class="section-subtitle">Get started with a free sandbox workspace, or scale up to unlock premium features and advanced cloud AI models.</p>
+
+                    <!-- Toggle Button -->
+                    <div class="pricing-toggle-container">
+                        <span class="toggle-label active" id="label-monthly">Monthly Billed</span>
+                        <button class="pricing-toggle" id="billing-toggle" aria-label="Toggle pricing period">
+                            <span class="toggle-slider"></span>
+                        </button>
+                        <span class="toggle-label" id="label-yearly">Yearly Billed <span class="discount-badge">Save 20%</span></span>
+                    </div>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Plan 1: Free -->
+                    <div class="pricing-card">
+                        <div class="card-glow"></div>
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Starter</h3>
+                            <p class="plan-desc">Perfect for individual visual note-taking.</p>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="price-val" id="price-starter">0</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-divider"></div>
+                        <ul class="plan-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited local canvas boards</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> 50 active AI prompt executions</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 3 editors per board</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> PDF/Markdown Export</li>
+                        </ul>
+                        <div class="pricing-actions">
+                            <a href="#hero" class="btn btn-secondary btn-full">Start Free Sandbox</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 2: Pro (Highlighted) -->
+                    <div class="pricing-card featured">
+                        <div class="card-glow"></div>
+                        <div class="featured-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Pro</h3>
+                            <p class="plan-desc">For advanced builders and power thinkers.</p>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="price-val" id="price-pro" data-monthly="12" data-yearly="10">12</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-divider"></div>
+                        <ul class="plan-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Everything in Starter, plus:</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Unlimited</strong> cloud AI model calls</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Context-aware search across files</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Version history up to 30 days</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Premium plugins and databases</li>
+                        </ul>
+                        <div class="pricing-actions">
+                            <a href="#hero" class="btn btn-primary btn-full">Get Started with Pro</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 3: Team -->
+                    <div class="pricing-card">
+                        <div class="card-glow"></div>
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Team</h3>
+                            <p class="plan-desc">For collaborative workgroups and startups.</p>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="price-val" id="price-team" data-monthly="30" data-yearly="25">30</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-divider"></div>
+                        <ul class="plan-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Everything in Pro, plus:</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Unlimited team members/editors</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Rich workspace permission structures</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> SAML SSO & custom domains</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated support engineer</li>
+                        </ul>
+                        <div class="pricing-actions">
+                            <a href="#hero" class="btn btn-secondary btn-full">Upgrade Team Workspace</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">FAQ</span>
+                    <h2 class="section-title">Got questions? We have answers.</h2>
+                    <p class="section-subtitle">Learn more about how Aura works, security, and migration options.</p>
+                </div>
+
+                <div class="faq-accordion-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                            <span>Is my data encrypted and secure on the canvas?</span>
+                            <span class="faq-icon-plus" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-1" aria-hidden="true">
+                            <p>Yes. All communication uses end-to-end TLS encryption. Your documents and database columns are encrypted at rest using AES-256 keys. We never train our core AI foundation models on your private database entries or canvas boards without your explicit opt-in consent.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span>Can I use Aura Canvas offline?</span>
+                            <span class="faq-icon-plus" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-2" aria-hidden="true">
+                            <p>Absolutely. Aura uses a local-first architecture. It caches all your boards directly on your device via SQLite. You can fully browse, edit, create new canvases, and configure nodes offline. Changes sync immediately once a connection is detected.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                            <span>How do I connect external tools like Notion or GitHub?</span>
+                            <span class="faq-icon-plus" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" aria-hidden="true">
+                            <p>Aura provides native integrations via our Integrations Dashboard. Simply click the integration icon, authorize your account, and you can pull Notion databases as live-refreshing canvas tables or map GitHub issue tickets into visual flowcharts on your canvas.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                            <span>Do you offer discounts for educational use?</span>
+                            <span class="faq-icon-plus" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-4" aria-hidden="true">
+                            <p>Yes! We support students, teachers, and researchers. Students and academic staff get access to our Pro workspace features for free. Simply sign up with a valid educational email address (`.edu`, etc.) to activate your discount automatically.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Conversion CTA Section -->
+        <section class="cta-banner-section">
+            <div class="container">
+                <div class="cta-banner-card">
+                    <div class="banner-glow" aria-hidden="true"></div>
+                    <div class="banner-content">
+                        <h2 class="banner-title">Build your mind on canvas.</h2>
+                        <p class="banner-subtitle">Join thousands of builders, designers, and software engineers who use Aura to map, search, and design their product ideas visually.</p>
+                        <div class="banner-actions">
+                            <a href="#pricing" class="btn btn-primary btn-lg" id="banner-cta">Start Free Today</a>
+                            <a href="#showcase" class="btn btn-ghost btn-lg text-white">Request Enterprise Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="url(#logoGrad)" />
+                            <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="logo-text">Aura<span class="gradient-text">Canvas</span></span>
+                    </a>
+                    <p class="footer-desc">Aura Canvas is the spatial, AI-powered whiteboard for modern creative builders.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Discord">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Links -->
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#showcase">Showcase</a></li>
+                        <li><a href="#pricing">Pricing Plans</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Links -->
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">AI Templates</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Status Page</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-newsletter">
+                    <h4>Subscribe to newsletter</h4>
+                    <p>Get the latest updates, design templates, and tips sent to your inbox weekly.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" placeholder="you@example.com" aria-label="Email Address" required>
+                        <button type="submit" class="btn btn-primary btn-icon-only" aria-label="Submit Newsletter Form">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aura Labs, Inc. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS script -->
+</body>
+</html>
